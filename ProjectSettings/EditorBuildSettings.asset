@@ -6,4 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VisualNovelToolkit/Examples/Example Dialog/Example Dialog.unity
+    path: Assets/Pong/MainMenu.unity
+    guid: 40c70114c41dd544590bf9067a8fa89f
+  - enabled: 1
+    path: Assets/Pong/PlayLevel.unity
+    guid: 5720caab9eb63dd49bc545dc6833728a
+  m_configObjects: {}
