@@ -11,7 +11,10 @@ public class DCFLocomotionSystem : MonoBehaviour
     float wallCheckDistance = 5;
 
     [SerializeField]
-    float turnSpeed = 0.75f;
+    float moveSpeed = 1;
+
+    [SerializeField]
+    float turnSpeed = 1;
 
     Animator anim;
 
@@ -41,7 +44,7 @@ public class DCFLocomotionSystem : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.UpArrow))
                 {
-                    anim.SetTrigger("MoveForward");
+                    StartCoroutine(MoveForward());
                     movedForward = true;
                 }
             }
@@ -62,13 +65,25 @@ public class DCFLocomotionSystem : MonoBehaviour
         }
     }
 
+    IEnumerator MoveForward()
+    {
+        float moveTime = 1;
+        while (moveTime > 0)
+        {
+            moveTime -= Time.deltaTime * moveSpeed;
+            transform.position += transform.forward * 10 * moveSpeed * Time.deltaTime;
+            yield return null;
+        }
+        FinishAnimating();
+    }
+
     IEnumerator TurnLeft()
     {
-        float rotateTime = turnSpeed;
+        float rotateTime = 1;
         while (rotateTime > 0)
         {
-            rotateTime -= Time.deltaTime;
-            transform.Rotate(0, -115 * Time.deltaTime, 0);
+            rotateTime -= Time.deltaTime * turnSpeed;
+            transform.Rotate(0, -90 * Time.deltaTime * turnSpeed, 0);
             yield return null;
         }
         SetDirection();
@@ -76,11 +91,11 @@ public class DCFLocomotionSystem : MonoBehaviour
 
     IEnumerator TurnRight()
     {
-        float rotateTime = turnSpeed;
+        float rotateTime = 1;
         while (rotateTime > 0)
         {
-            rotateTime -= Time.deltaTime;
-            transform.Rotate(0, 115 * Time.deltaTime, 0);
+            rotateTime -= Time.deltaTime * turnSpeed;
+            transform.Rotate(0, 90 * Time.deltaTime * turnSpeed, 0);
             yield return null;
         }
         SetDirection();
@@ -143,5 +158,10 @@ public class DCFLocomotionSystem : MonoBehaviour
     public void FadeOutVision()
     {
         anim.SetTrigger("FadeOut");
+    }
+
+    public void OpenDoor()
+    {
+        anim.SetTrigger("is_open");
     }
 }

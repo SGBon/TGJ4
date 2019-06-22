@@ -12,6 +12,10 @@ public class DCFTriggerTile : MonoBehaviour
 
     bool activated = false;
 
+    void Start()
+    {
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if ((onlyTriggerOnce && !activated) || !onlyTriggerOnce)
