@@ -874,7 +874,7 @@ GameObject:
   - component: {fileID: 1513220324}
   - component: {fileID: 1513220326}
   - component: {fileID: 1513220325}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1278,16 +1278,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2067837230289348609, guid: faf0f8021e691304db3def3926d46a7d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067837230289348620, guid: faf0f8021e691304db3def3926d46a7d,
-        type: 3}
-      propertyPath: wallLayer.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
     - target: {fileID: 2067837230289348622, guid: faf0f8021e691304db3def3926d46a7d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1342,26 +1332,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067837229951921084, guid: faf0f8021e691304db3def3926d46a7d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067837230508882206, guid: faf0f8021e691304db3def3926d46a7d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067837230834789486, guid: faf0f8021e691304db3def3926d46a7d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2067837229702554273, guid: faf0f8021e691304db3def3926d46a7d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faf0f8021e691304db3def3926d46a7d, type: 3}

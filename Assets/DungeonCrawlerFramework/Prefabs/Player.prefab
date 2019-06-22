@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2067837229702554286}
   - component: {fileID: 2067837229702554284}
   - component: {fileID: 2067837229702554287}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2067837229951921085}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 2067837230289348620}
   - component: {fileID: 2067837230289348618}
   - component: {fileID: 2067837230289348621}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,8 +173,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
   wallCheckDistance: 5
+  moveSpeed: 2
+  turnSpeed: 1.25
   rotationAccumulation: 0
 --- !u!54 &2067837230289348618
 Rigidbody:
@@ -217,7 +219,7 @@ GameObject:
   - component: {fileID: 2067837230508882207}
   - component: {fileID: 2067837230508882205}
   - component: {fileID: 2067837230508882204}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -302,7 +304,7 @@ GameObject:
   - component: {fileID: 2067837230834789485}
   - component: {fileID: 2067837230834789484}
   - component: {fileID: 2067837230834789487}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
