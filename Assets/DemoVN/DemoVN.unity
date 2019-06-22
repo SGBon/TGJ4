@@ -150,39 +150,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Reimu
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 58bfb145092302e4083ef8a9e4eeb576, type: 3}
-  - {fileID: 21300000, guid: d8b4be5652abe8a438eb34290ae8c163, type: 3}
-  - {fileID: 21300000, guid: 061fcd6caac25954287291fffde7cd2c, type: 3}
-  - {fileID: 21300000, guid: e8a9122c4dc10b14da3b625e1f2634c9, type: 3}
-  - {fileID: 21300000, guid: 03bc547cc0049594bae51f00903eedef, type: 3}
-  - {fileID: 21300000, guid: 059763178da334d408b6fa05fdea33c8, type: 3}
-  - {fileID: 21300000, guid: a6b4fd71ceffb6e4b9f3272ef8a5c2c3, type: 3}
-  - {fileID: 21300000, guid: d7af8fdea3ead3c4b8a4e54d014b255d, type: 3}
-  - {fileID: 21300000, guid: a79a4c2e96ba5fd418c637fe852e92d9, type: 3}
-  - {fileID: 21300000, guid: 7c9434f7e81b4264f9c56afc7180b8cf, type: 3}
-  - {fileID: 21300000, guid: 636094c1361ce1b44b4ace0fc587d758, type: 3}
-  - {fileID: 21300000, guid: ab808050bc535a643afaf4755050339e, type: 3}
-  - {fileID: 21300000, guid: 64376d4849cae324a80743317c8aa539, type: 3}
-  - {fileID: 21300000, guid: 7c9434f7e81b4264f9c56afc7180b8cf, type: 3}
-  - {fileID: 21300000, guid: 636094c1361ce1b44b4ace0fc587d758, type: 3}
-  - {fileID: 21300000, guid: ab808050bc535a643afaf4755050339e, type: 3}
-  - {fileID: 21300000, guid: 64376d4849cae324a80743317c8aa539, type: 3}
-  - {fileID: 21300000, guid: 96b0380b84e6f4546886b1d58ca0f280, type: 3}
-  - {fileID: 21300000, guid: cbc4101c77001344eb9d31ddf978001c, type: 3}
-  - {fileID: 21300000, guid: 59bb03809f57a71499d03ddac98c4203, type: 3}
-  - {fileID: 21300000, guid: 09b05a675bbbc4e4b8f3b031a1fb63f5, type: 3}
-  - {fileID: 21300000, guid: 6aedf8395780557418c4b84288657314, type: 3}
-  - {fileID: 21300000, guid: 3bcfc8e7b3c790e45b57cc6db1526225, type: 3}
-  - {fileID: 21300000, guid: bb66ae101c944a34e870fde3693b756d, type: 3}
-  - {fileID: 21300000, guid: d38d394fe4d92ae4da3d41e6ff3b0385, type: 3}
-  - {fileID: 21300000, guid: 267c50c3c26c7e24fa27aece06aad7cd, type: 3}
-  - {fileID: 21300000, guid: 59d7c816c1cfb9944b5a28dfbbfe2109, type: 3}
-  - {fileID: 21300000, guid: 3f74023835f9bd34d88b85ac04062465, type: 3}
-  - {fileID: 21300000, guid: 58ba1a99d9b61514984191565c416eca, type: 3}
-  - {fileID: 21300000, guid: 9ce6cf540ce2ece4dacce467ace3bca4, type: 3}
+  - {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
+  - {fileID: 21300000, guid: eb12e2fe5aa42bb488a27a925876e6a5, type: 3}
+  - {fileID: 21300000, guid: 9aca30728f1df4347ae8ff4e0f7375eb, type: 3}
+  - {fileID: 21300000, guid: 27c7d8abb5ab94942be08a2a92934e13, type: 3}
   portraitsFace: 2
   setSayDialog: {fileID: 0}
   description: 
@@ -308,7 +282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 1300, y: -1000}
+  m_AnchoredPosition: {x: 1300, y: -1200}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &110157570
@@ -505,7 +479,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 460.43, y: -1000}
+  m_AnchoredPosition: {x: 460.43, y: -1200}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &129482979
@@ -2219,34 +2193,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Marisa
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: b9482ea03e69b5a4aa5e7827da354549, type: 3}
-  - {fileID: 21300000, guid: 7497fd82318972540af8666a234a9685, type: 3}
-  - {fileID: 21300000, guid: 8f5b5b110e73a414eb229eeead86200f, type: 3}
-  - {fileID: 21300000, guid: 65cda1e3dd1ec8c4bb828adc5bb06c7d, type: 3}
-  - {fileID: 21300000, guid: 84cdbfde1b7d4c24ab7071894480d5db, type: 3}
-  - {fileID: 21300000, guid: bca405818493a4f4a8fb63a69294d19a, type: 3}
-  - {fileID: 21300000, guid: 5ba6e5e5e65bc084ba912d2d2d8718df, type: 3}
-  - {fileID: 21300000, guid: 96ca91f43a9c1f74b970b59f46047e74, type: 3}
-  - {fileID: 21300000, guid: 5426a8c5c16e04d439b48a522267b236, type: 3}
-  - {fileID: 21300000, guid: c27113fd8a09c7c45a856e5d3c843c11, type: 3}
-  - {fileID: 21300000, guid: 67bc1238f72c52b49bd0ad82c79756ac, type: 3}
-  - {fileID: 21300000, guid: 75b6e7c8c9b6b4d40ae30dc671be34b7, type: 3}
-  - {fileID: 21300000, guid: a3710c5af5b436a46b8d0ff4235d1dfe, type: 3}
-  - {fileID: 21300000, guid: 36652428f3b9f6d41840d56c65aa0d64, type: 3}
-  - {fileID: 21300000, guid: 6384dc397ea803d4abf0d1de10afb1c1, type: 3}
-  - {fileID: 21300000, guid: ed8fca01dcf5bfc4f86bc063889a5013, type: 3}
-  - {fileID: 21300000, guid: 448053637e8df7a42824234afeafa291, type: 3}
-  - {fileID: 21300000, guid: 7add35a7d20a5ee41b0bfde9052ddfd6, type: 3}
-  - {fileID: 21300000, guid: f233fc32ad198a44880e410c5577da9c, type: 3}
-  - {fileID: 21300000, guid: 58f5b79d262f6814bb4ebb44e29efe90, type: 3}
-  - {fileID: 21300000, guid: 97171eca7b577c5438e9516b956c042a, type: 3}
-  - {fileID: 21300000, guid: 4cfc408caecceeb45989d991a2dccb3c, type: 3}
-  - {fileID: 21300000, guid: 6d5c34a95aa09ce4a9be9f7258a02c0d, type: 3}
-  - {fileID: 21300000, guid: bd1b1199c415fc642ae13055981f42aa, type: 3}
-  - {fileID: 21300000, guid: 3fd077b79b3018945961e206b6435268, type: 3}
+  - {fileID: 21300000, guid: 15a20b885554ebd42ad08f50bd2ee81c, type: 3}
+  - {fileID: 21300000, guid: 24566f66fa328154497e1b5bdb599931, type: 3}
+  - {fileID: 21300000, guid: 13771e3ca151a0c4ab80b1506456510c, type: 3}
+  - {fileID: 21300000, guid: db16d94338da81841982cf6f58dfcb5b, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
@@ -2770,7 +2723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -1300, y: -1000}
+  m_AnchoredPosition: {x: -1300, y: -1200}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &766768989
@@ -3698,7 +3651,7 @@ MonoBehaviour:
   storyText: "This area isn\u2019t how I remember it."
   description: 
   character: {fileID: 50178769}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3725,7 +3678,7 @@ MonoBehaviour:
   storyText: ' Maybe your senses have dulled after hunting too many yokai.'
   description: 
   character: {fileID: 565825601}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 24566f66fa328154497e1b5bdb599931, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3752,7 +3705,7 @@ MonoBehaviour:
   storyText: Seems to be the same as usual.
   description: 
   character: {fileID: 565825601}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 15a20b885554ebd42ad08f50bd2ee81c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3779,7 +3732,7 @@ MonoBehaviour:
   storyText: "If anything, you\u2019ve become dull."
   description: 
   character: {fileID: 50178769}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3872,7 +3825,7 @@ MonoBehaviour:
   scrollPos: {x: -57, y: -20}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
+  blockViewHeight: 577
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -3881,9 +3834,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 945506472}
+  - {fileID: 945506432}
   selectedCommands:
-  - {fileID: 945506473}
+  - {fileID: 945506436}
   variables: []
   description: 
   stepPause: 0
@@ -3953,12 +3906,12 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "You\u2019ll regret your words soon enough."
   description: 
-  character: {fileID: 50178769}
-  portrait: {fileID: 0}
+  character: {fileID: 565825601}
+  portrait: {fileID: 21300000, guid: db16d94338da81841982cf6f58dfcb5b, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
-  extendPrevious: 1
+  extendPrevious: 0
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
@@ -3981,7 +3934,7 @@ MonoBehaviour:
   storyText: "It wouldn\u2019t be the first time you\u2019ve been wrong."
   description: 
   character: {fileID: 50178769}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: eb12e2fe5aa42bb488a27a925876e6a5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -4009,7 +3962,7 @@ MonoBehaviour:
     strongest magician!"
   description: 
   character: {fileID: 565825601}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 15a20b885554ebd42ad08f50bd2ee81c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -4055,7 +4008,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 565825601}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: c27113fd8a09c7c45a856e5d3c843c11, type: 3}
+  portrait: {fileID: 21300000, guid: 15a20b885554ebd42ad08f50bd2ee81c, type: 3}
   offset: 0
   fromPosition: {fileID: 110157569}
   toPosition: {fileID: 129482978}
@@ -4085,7 +4038,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 50178769}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 059763178da334d408b6fa05fdea33c8, type: 3}
+  portrait: {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
   offset: 0
   fromPosition: {fileID: 766768988}
   toPosition: {fileID: 1103918574}
@@ -4113,9 +4066,9 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 50178769}
+  character: {fileID: 565825601}
   replacedCharacter: {fileID: 50178769}
-  portrait: {fileID: 21300000, guid: 09b05a675bbbc4e4b8f3b031a1fb63f5, type: 3}
+  portrait: {fileID: 21300000, guid: db16d94338da81841982cf6f58dfcb5b, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -4145,7 +4098,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 50178769}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: e8a9122c4dc10b14da3b625e1f2634c9, type: 3}
+  portrait: {fileID: 21300000, guid: eb12e2fe5aa42bb488a27a925876e6a5, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -4175,7 +4128,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 565825601}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 65cda1e3dd1ec8c4bb828adc5bb06c7d, type: 3}
+  portrait: {fileID: 21300000, guid: db16d94338da81841982cf6f58dfcb5b, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -4205,7 +4158,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 50178769}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 58bfb145092302e4083ef8a9e4eeb576, type: 3}
+  portrait: {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -4235,7 +4188,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 565825601}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: a3710c5af5b436a46b8d0ff4235d1dfe, type: 3}
+  portrait: {fileID: 21300000, guid: 15a20b885554ebd42ad08f50bd2ee81c, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -5277,7 +5230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -460.43, y: -1000}
+  m_AnchoredPosition: {x: -460.43, y: -1200}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1103918575
@@ -6271,8 +6224,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1565846292}
   m_HandleRect: {fileID: 1565846291}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.42669845
+  m_Value: 1.0000001
+  m_Size: 0.4369496
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
