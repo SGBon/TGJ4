@@ -55,7 +55,6 @@ public class GameManager : MonoBehaviour
 		Direction direction = getNextInput();
 		if(direction != Direction.NONE)
 		{
-			Debug.Log("direction: " + direction);
 			if (slideTiles(direction))
 			{
 				generateTile();
@@ -111,63 +110,37 @@ public class GameManager : MonoBehaviour
 	{
 		bool anyslide = false; // this flag will be set to true if any tiles were moved during the execution of this function
 
-		if (direction == Direction.RIGHT)
+		int yStart;
+		int yEnd;
+		int dy;
+		int xStart;
+		int xEnd;
+		int dx;
+
+		if (direction == Direction.RIGHT || direction == Direction.LEFT)
 		{
-			for (int y = 0; y < GRID_WIDTH; ++y)
+			yStart = 0;
+			yEnd = GRID_WIDTH;
+			dy = 1;
+
+			for (int y = yStart; y < yEnd; y += dy)
 			{
 				Stack<SlideInfo> mergeStack = new Stack<SlideInfo>();
-				for (int x = 0; x < GRID_WIDTH; ++x)
+
+				if (direction == Direction.LEFT)
 				{
-					int index = y * GRID_WIDTH + x;
-					GameObject tile = gameGrid[index];
-					if (tile != null)
-					{
-						mergeStack.Push(new SlideInfo(tile,index));
-						gameGrid[index] = null; // temporarily remove the tile from the grid spaces
-					}
+					xStart = GRID_WIDTH - 1;
+					xEnd = -1;
+					dx = -1;
+				}
+				else
+				{
+					xStart = 0;
+					xEnd = GRID_WIDTH;
+					dx = 1;
 				}
 
-				if (mergeStack.Count > 0)
-				{
-					SlideInfo first = mergeStack.Pop();
-					TileController firstTC = first.tile.GetComponent<TileController>();
-					int firstIndex = y * GRID_WIDTH + (GRID_WIDTH - 1);
-					gameGrid[firstIndex] = first.tile;
-					if (firstIndex != first.oldIndex)
-					{
-						anyslide = true;
-					}
-
-					for(int x = GRID_WIDTH - 2; mergeStack.Count > 0; --x)
-					{
-						SlideInfo second = mergeStack.Pop();
-						TileController secondTC = second.tile.GetComponent<TileController>();
-						if (firstTC.getValue() == secondTC.getValue())
-						{
-							firstTC.setValue(firstTC.getValue() * 2);
-							tileManager.internTile(second.tile);
-						}
-						else
-						{
-							int secondIndex = y * GRID_WIDTH + x;
-							gameGrid[secondIndex] = second.tile;
-							if (!anyslide && second.oldIndex != secondIndex)
-							{
-								anyslide = true;
-							}
-							first = second;
-							firstTC = first.tile.GetComponent<TileController>();
-						}
-					}
-				}
-			}
-		}
-		else if (direction == Direction.LEFT)
-		{
-			for (int y = 0; y < GRID_WIDTH; ++y)
-			{
-				Stack<SlideInfo> mergeStack = new Stack<SlideInfo>();
-				for (int x = GRID_WIDTH - 1; x >= 0; --x)
+				for (int x = xStart; x != xEnd; x += dx)
 				{
 					int index = y * GRID_WIDTH + x;
 					GameObject tile = gameGrid[index];
@@ -182,22 +155,49 @@ public class GameManager : MonoBehaviour
 				{
 					SlideInfo first = mergeStack.Pop();
 					TileController firstTC = first.tile.GetComponent<TileController>();
-					int firstIndex = y * GRID_WIDTH;
-					gameGrid[firstIndex] = first.tile;
+					int firstIndex;
 
-					if (firstIndex != first.oldIndex)
+					if (direction == Direction.RIGHT)
+					{
+						firstIndex = y * GRID_WIDTH + (GRID_WIDTH - 1);
+						xStart = GRID_WIDTH - 2;
+						dx = -1;
+					}
+					else
+					{
+						firstIndex = y * GRID_WIDTH;
+						xStart = 1;
+						dx = 1;
+					}
+
+					gameGrid[firstIndex] = first.tile;
+					if (!anyslide && firstIndex != first.oldIndex)
 					{
 						anyslide = true;
 					}
 
-					for (int x = 1; mergeStack.Count > 0; ++x)
+
+					for (int x = xStart; mergeStack.Count > 0; x += dx)
 					{
 						SlideInfo second = mergeStack.Pop();
 						TileController secondTC = second.tile.GetComponent<TileController>();
+
 						if (firstTC.getValue() == secondTC.getValue())
 						{
 							firstTC.setValue(firstTC.getValue() * 2);
 							tileManager.internTile(second.tile);
+							if (!anyslide)
+							{
+								anyslide = true;
+							}
+
+							if (mergeStack.Count > 0)
+							{
+								first = mergeStack.Pop();
+								firstTC = first.tile.GetComponent<TileController>();
+								firstIndex = y * GRID_WIDTH + x;
+								gameGrid[firstIndex] = first.tile;
+							}
 						}
 						else
 						{
@@ -214,13 +214,101 @@ public class GameManager : MonoBehaviour
 				}
 			}
 		}
-		else if (direction == Direction.UP)
+		else if (direction == Direction.UP || direction == Direction.DOWN)
 		{
+			xStart = 0;
+			xEnd = GRID_WIDTH;
+			dx = 1;
 
-		}
-		else if (direction == Direction.DOWN)
-		{
+			for (int x = xStart; x != xEnd; x += dx)
+			{
+				Stack<SlideInfo> mergeStack = new Stack<SlideInfo>();
 
+				if (direction == Direction.DOWN)
+				{
+					yStart = GRID_WIDTH - 1;
+					yEnd = -1;
+					dy = -1;
+				}
+				else
+				{
+					yStart = 0;
+					yEnd = GRID_WIDTH;
+					dy = 1;
+				}
+
+				for (int y = yStart; y != yEnd; y += dy)
+				{
+					int index = y * GRID_WIDTH + x;
+					GameObject tile = gameGrid[index];
+					if (tile != null)
+					{
+						mergeStack.Push(new SlideInfo(tile, index));
+						gameGrid[index] = null; // temporarily remove the tile from the grid spaces
+					}
+				}
+
+				if (mergeStack.Count > 0)
+				{
+					SlideInfo first = mergeStack.Pop();
+					TileController firstTC = first.tile.GetComponent<TileController>();
+					int firstIndex;
+
+					if (direction == Direction.DOWN)
+					{
+						firstIndex = x;
+						yStart = 1;
+						dy = 1;
+					}
+					else
+					{
+						firstIndex = GRID_WIDTH * (GRID_WIDTH - 1) + x;
+						yStart = GRID_WIDTH - 2;
+						dy = -1;
+					}
+
+					gameGrid[firstIndex] = first.tile;
+					if (!anyslide && firstIndex != first.oldIndex)
+					{
+						anyslide = true;
+					}
+
+
+					for (int y = yStart; mergeStack.Count > 0; y += dy)
+					{
+						SlideInfo second = mergeStack.Pop();
+						TileController secondTC = second.tile.GetComponent<TileController>();
+
+						if (firstTC.getValue() == secondTC.getValue())
+						{
+							firstTC.setValue(firstTC.getValue() * 2);
+							tileManager.internTile(second.tile);
+							if (!anyslide)
+							{
+								anyslide = true;
+							}
+							if (mergeStack.Count > 0)
+							{
+								first = mergeStack.Pop();
+								firstTC = first.tile.GetComponent<TileController>();
+								firstIndex = y * GRID_WIDTH + x;
+								gameGrid[firstIndex] = first.tile;
+							}
+						}
+						else
+						{
+							int secondIndex = y * GRID_WIDTH + x;
+							gameGrid[secondIndex] = second.tile;
+							if (!anyslide && second.oldIndex != secondIndex)
+							{
+								anyslide = true;
+							}
+							first = second;
+							firstTC = first.tile.GetComponent<TileController>();
+						}
+					}
+				}
+			}
 		}
 
 		return anyslide;
@@ -257,7 +345,7 @@ public class GameManager : MonoBehaviour
 				int x = i % GRID_WIDTH;
 				int y = i / GRID_WIDTH;
 				tile.transform.position = new Vector3(x*interval,y*interval,tile.transform.position.z);
-				Debug.Log(x + ":" + y + " " + tile.transform.position);
+				//Debug.Log(x + ":" + y + " " + tile.transform.position);
 			}
 		}
 	}
