@@ -159,4 +159,9 @@ public class DCFLocomotionSystem : MonoBehaviour
     {
         anim.SetTrigger("FadeOut");
     }
+
+    public void OpenDoor()
+    {
+        anim.SetTrigger("is_open");
+    }
 }
