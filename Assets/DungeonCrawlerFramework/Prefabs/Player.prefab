@@ -175,8 +175,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   wallCheckDistance: 5
-  moveSpeed: 2
-  turnSpeed: 1.25
+  moveSpeed: 4
+  turnSpeed: 4
   rotationAccumulation: 0
 --- !u!54 &2067837230289348618
 Rigidbody:

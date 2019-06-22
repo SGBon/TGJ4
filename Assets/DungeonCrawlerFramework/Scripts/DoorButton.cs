@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class DoorButton : MonoBehaviour
 {
     // Start is called before the first frame update
     private Animator anim;
@@ -18,15 +18,14 @@ public class Door : MonoBehaviour
     //    
     //}
 
-    public void OpenDoor()
+    public void ButtonUp()
     {
-        anim.SetBool("open_door", true);
+        anim.SetBool("button_position", false);
     }
 
 
-    public void CloseDoor()
+    public void ButtonDown()
     {
-        anim.SetBool("open_door", false);
+        anim.SetBool("button_position", true);
     }
 }
-
