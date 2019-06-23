@@ -46,3 +46,5 @@ MonoBehaviour:
   tileManager: {fileID: 0}
   TWO_CHANCE: 0.9
   winCondition: 256
+  ui: {fileID: 0}
+  postWinTime: 5
