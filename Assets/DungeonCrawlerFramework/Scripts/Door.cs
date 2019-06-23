@@ -7,9 +7,12 @@ public class Door : MonoBehaviour
     // Start is called before the first frame update
     private Animator anim;
 
+    AudioManager am;
+
     void Start()
     {
         anim = GetComponent<Animator>();
+        am = AudioManager.GetInstance();
     }
 
     // Update is called once per frame
@@ -21,6 +24,7 @@ public class Door : MonoBehaviour
     public void OpenDoor()
     {
         anim.SetBool("open_door", true);
+        am.PlaySoundOnce(AudioManager.Sound.DoorOpen, transform, AudioManager.Priority.High, AudioManager.Pitches.VeryLow);
     }
 
 
