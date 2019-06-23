@@ -26,13 +26,26 @@ public class DCFLocomotionSystem : MonoBehaviour
     [SerializeField]
     int rotationAccumulation = 0;
 
+    [SerializeField]
+    int xAccumulation = 0;
+    [SerializeField]
+    int zAccumulation = 0;
+
     bool turnedLeft;
     bool turnedRight;
+
+    AudioManager am;
+
+    Coroutine moveForward;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        am = AudioManager.GetInstance();
+
+        xAccumulation = Mathf.RoundToInt(transform.position.x) / 10;
+        zAccumulation = Mathf.RoundToInt(transform.position.z) / 10;
     }
 
     // Update is called once per frame
@@ -44,7 +57,12 @@ public class DCFLocomotionSystem : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.UpArrow))
                 {
-                    StartCoroutine(MoveForward());
+                    if (moveForward != null)
+                    {
+                        StopCoroutine(moveForward);
+                    }
+                    moveForward = StartCoroutine(MoveForward());
+                    am.PlaySoundOnce(AudioManager.Sound.Move);
                     movedForward = true;
                 }
             }
@@ -112,7 +130,7 @@ public class DCFLocomotionSystem : MonoBehaviour
         if (turnedLeft) rotationAccumulation--;
         else if (turnedRight) rotationAccumulation++;
 
-        transform.eulerAngles = new Vector3(0, rotationAccumulation * 90, 0);
+        transform.eulerAngles = new Vector3(0, Mathf.RoundToInt(rotationAccumulation * 90), 0);
 
         turnedLeft = false;
         turnedRight = false;
@@ -125,8 +143,14 @@ public class DCFLocomotionSystem : MonoBehaviour
     {
         if (movedForward)
         {
+            if (Mathf.Approximately(transform.eulerAngles.y, 0) || Mathf.Approximately(transform.eulerAngles.y, 360)) zAccumulation++;
+            else if (Mathf.Approximately(transform.eulerAngles.y, 270)) xAccumulation--;
+            else if (Mathf.Approximately(transform.eulerAngles.y, 90)) xAccumulation++;
+            else if (Mathf.Approximately(transform.eulerAngles.y, 180)) zAccumulation--;
+
             movedForward = false;
-            transform.position = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y), Mathf.RoundToInt(transform.position.z));
+            //transform.position = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y), Mathf.RoundToInt(transform.position.z));
+            transform.position = new Vector3(xAccumulation * 10, Mathf.RoundToInt(transform.position.y), zAccumulation * 10);
         }
 
         SetDirection();
