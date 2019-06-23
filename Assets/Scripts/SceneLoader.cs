@@ -5,6 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public static SceneLoader Singleton;
+
+    [SerializeField]
+    UnityEngine.Events.UnityEvent pongClear;
+
+    private void Awake()
+    {
+        if (Singleton == null)
+        {
+            Singleton = this;
+        }
+        else
+            Destroy(gameObject);
+    }
+
+    public static SceneLoader GetInstance()
+    {
+        return Singleton;
+    }
+
+    public void PongClear()
+    {
+        pongClear.Invoke();
+    }
+
     public void LoadScene(int scene)
     {
         SceneManager.LoadScene(scene, LoadSceneMode.Additive);

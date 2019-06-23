@@ -31,8 +31,9 @@ public class UIManager : MonoBehaviour {
 		//}
 
         //end the game if the orb hit the wall 40 times
-        if(enemy.hitCount >= 30 && !isFinished)
+        if(enemy.hitCount >= 25 && !isFinished)
         {
+            SceneLoader.GetInstance().PongClear();
             UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(1);
         }
 
