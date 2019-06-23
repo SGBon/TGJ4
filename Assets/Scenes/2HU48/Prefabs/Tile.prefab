@@ -197,3 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueLabel: {fileID: 3768015240946257951}
+  growSpeed: 5
+  maxSize: 2
+  minSize: 1
+  interpSpeed: 30
