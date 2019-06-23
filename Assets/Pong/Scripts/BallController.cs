@@ -6,6 +6,9 @@ public class BallController : MonoBehaviour {
 	//speed of the ball (Set difficulty here)
 	public float speed = 10F;
 
+    [SerializeField]
+    float speedIncrease = 0.15f;
+
 	//the initial direction of the ball
 	private Vector2 spawnDir;
 
@@ -36,9 +39,9 @@ public class BallController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
-	}
+	//void Update () {
+	//
+	//}
 
 	void OnCollisionEnter2D(Collision2D col) {
 
@@ -52,9 +55,9 @@ public class BallController : MonoBehaviour {
 			//set angle and speed
 			Vector2 d = new Vector2(1, y).normalized;
 			rig2D.velocity = d * speed * 1.5F;
-		}
+        }
 
-		if (col.gameObject.tag == "Player") {
+        if (col.gameObject.tag == "Player") {
 			//calculate angle
 			float y = launchAngle(transform.position,
 			                    col.transform.position,
@@ -63,11 +66,13 @@ public class BallController : MonoBehaviour {
 			//set angle and speed
 			Vector2 d = new Vector2(-1, y).normalized;
 			rig2D.velocity = d * speed * 1.5F;
-		}
-	}
+        }
 
-	//calculates the angle the ball hits the paddle at
-	float launchAngle(Vector2 ballPos, Vector2 paddlePos,
+        speed += speedIncrease;
+    }
+
+    //calculates the angle the ball hits the paddle at
+    float launchAngle(Vector2 ballPos, Vector2 paddlePos,
 	                float paddleHeight) {
 		return (ballPos.y - paddlePos.y) / paddleHeight;
 	}

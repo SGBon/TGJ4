@@ -27,9 +27,9 @@ public class BoundController : MonoBehaviour {
 			Destroy(other.gameObject);
 
 			//sets enemy's position back to original
-			enemy.position = new Vector3(-6,0,0);
+			//enemy.position = new Vector3(-6,0,0);
 			//pauses game
-			Time.timeScale = 0;
+			//Time.timeScale = 0;
 		}
 	}
 }
