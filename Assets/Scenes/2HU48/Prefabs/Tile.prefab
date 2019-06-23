@@ -151,7 +151,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17da6972f07af884f837fd1a24117f2f, type: 2}
+  - {fileID: 2100000, guid: 27e6a4a1cac632844bc46588126ec936, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -201,3 +201,6 @@ MonoBehaviour:
   maxSize: 2
   minSize: 1
   interpSpeed: 30
+  lowColour: {r: 0.3773585, g: 0.20469919, b: 0.20469919, a: 0.2509804}
+  midColour: {r: 0.6886792, g: 0.48190925, b: 0.16567281, a: 0.2509804}
+  highColour: {r: 0.66400003, g: 0.6557365, b: 0.16268001, a: 0.2509804}

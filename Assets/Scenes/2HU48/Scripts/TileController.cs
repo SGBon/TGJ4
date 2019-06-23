@@ -19,10 +19,15 @@ public class TileController : MonoBehaviour
 	private float interpThreshold = 0.5f;
 	private bool noInterp = false;
 
+	private MeshRenderer meshRenderer;
+	public Color lowColour;
+	public Color midColour;
+	public Color highColour;
+
 	// Start is called before the first frame update
 	void Start()
 	{
-
+		
 	}
 
 	// Update is called once per frame
@@ -54,8 +59,27 @@ public class TileController : MonoBehaviour
 
 	public void setValue(int value)
 	{
+		if(meshRenderer == null)
+		{
+			meshRenderer = GetComponent<MeshRenderer>();
+		}
+
 		this.value = value;
 		valueLabel.text = "" + value;
+
+		if(value <= 32)
+		{
+			meshRenderer.material.color = lowColour;	
+		}else if(value <= 128)
+		{
+			Debug.Log("mid");
+			meshRenderer.material.color = midColour;
+		}
+		else
+		{
+			Debug.Log("High");
+			meshRenderer.material.color = highColour;
+		}
 	}
 
 	public int getValue()
