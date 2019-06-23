@@ -31,16 +31,15 @@ public class UIManager : MonoBehaviour {
 		//}
 
         //end the game if the orb hit the wall 40 times
-        if(enemy.hitCount >= 5 && !isFinished)
+        if(enemy.hitCount >= 30 && !isFinished)
         {
-            isFinished = true;
+            UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(1);
         }
 
 		if(isFinished){
             Time.timeScale = 0;
             showFinished();
 		}
-
 		
 		//uses the p button to pause and unpause the game
 		if(Input.GetKeyDown(KeyCode.P) && !isFinished)
