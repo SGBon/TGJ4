@@ -651,5 +651,10 @@ PrefabInstance:
       propertyPath: tileManager
       value: 
       objectReference: {fileID: 1129411457}
+    - target: {fileID: 7187259223357498494, guid: 14824d45fb73b8344862811deb3d9924,
+        type: 3}
+      propertyPath: TWO_CHANCE
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14824d45fb73b8344862811deb3d9924, type: 3}

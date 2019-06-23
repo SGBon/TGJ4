@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
 	private GameObject[] gameGrid;
 	private static readonly int GRID_WIDTH = 4;
 	private static readonly int GRID_SIZE = GRID_WIDTH * GRID_WIDTH;
-	private static readonly float TWO_CHANCE = 0.8f;
+	[Range(0,1)]
+	public float TWO_CHANCE;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class GameManager : MonoBehaviour
 	private void generateTile()
 	{
 		GameObject tile = tileManager.retrieveTile();
+		tile.GetComponent<TileController>().disableNextInterp();
 		if (tile != null)
 		{
 			initializeTile(tile);
@@ -186,6 +188,7 @@ public class GameManager : MonoBehaviour
 						{
 							firstTC.setValue(firstTC.getValue() * 2);
 							tileManager.internTile(second.tile);
+							firstTC.pulse();
 							if (!anyslide)
 							{
 								anyslide = true;
@@ -282,6 +285,7 @@ public class GameManager : MonoBehaviour
 						if (firstTC.getValue() == secondTC.getValue())
 						{
 							firstTC.setValue(firstTC.getValue() * 2);
+							firstTC.pulse();
 							tileManager.internTile(second.tile);
 							if (!anyslide)
 							{
@@ -344,8 +348,9 @@ public class GameManager : MonoBehaviour
 			{
 				int x = i % GRID_WIDTH;
 				int y = i / GRID_WIDTH;
-				tile.transform.position = new Vector3(x*interval,y*interval,tile.transform.position.z);
-				//Debug.Log(x + ":" + y + " " + tile.transform.position);
+				TileController tc = tile.GetComponent<TileController>();
+				tc.finishInteroplation();
+				tc.setPosition(new Vector3(x * interval, y * interval, tile.transform.position.z));
 			}
 		}
 	}
@@ -356,6 +361,9 @@ public class GameManager : MonoBehaviour
 	private void initializeTile(GameObject tile)
 	{
 		int value = Random.Range(0.0f, 1.0f) < TWO_CHANCE ? 2 : 4;
-		tile.GetComponent<TileController>().setValue(value);
+		TileController t = tile.GetComponent<TileController>();
+		t.setValue(value);
+		t.shrink();
+		t.grow();
 	}
 }
