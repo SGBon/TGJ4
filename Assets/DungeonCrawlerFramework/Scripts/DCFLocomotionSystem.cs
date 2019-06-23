@@ -143,6 +143,7 @@ public class DCFLocomotionSystem : MonoBehaviour
     {
         if (movedForward)
         {
+            transform.eulerAngles = new Vector3(0, Mathf.RoundToInt(transform.eulerAngles.y), 0);
             if (Mathf.Approximately(transform.eulerAngles.y, 0) || Mathf.Approximately(transform.eulerAngles.y, 360)) zAccumulation++;
             else if (Mathf.Approximately(transform.eulerAngles.y, 270)) xAccumulation--;
             else if (Mathf.Approximately(transform.eulerAngles.y, 90)) xAccumulation++;

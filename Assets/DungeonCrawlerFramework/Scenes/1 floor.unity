@@ -2960,7 +2960,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1678884957}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdafd7dead28d8340b1fba78f3915d2b, type: 3}
   m_Name: 
@@ -5064,36 +5064,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1996608686}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenDoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6791797375113477841, guid: abcf04059b0aef94d854d12250913882,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5148,6 +5118,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1996608686}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7928105526803623065, guid: abcf04059b0aef94d854d12250913882,
         type: 3}
@@ -5480,36 +5480,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1154443959}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenDoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6791797375113477841, guid: abcf04059b0aef94d854d12250913882,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5564,6 +5534,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1154443959}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7928105526803623065, guid: abcf04059b0aef94d854d12250913882,
         type: 3}
@@ -7029,36 +7029,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button 1 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8176795489818515631}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseDoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6791797375113477841, guid: abcf04059b0aef94d854d12250913882,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7113,6 +7083,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8176795489818515631}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7928105526803623065, guid: abcf04059b0aef94d854d12250913882,
         type: 3}
@@ -12300,7 +12300,6 @@ GameObject:
   - component: {fileID: 1331808338}
   - component: {fileID: 1331808337}
   - component: {fileID: 1331808336}
-  - component: {fileID: 1331808335}
   - component: {fileID: 1331808334}
   - component: {fileID: 1331808333}
   - component: {fileID: 1331808332}
@@ -12317,13 +12316,14 @@ GameObject:
   - component: {fileID: 1331808321}
   - component: {fileID: 1331808364}
   - component: {fileID: 1331808368}
+  - component: {fileID: 1331808335}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1331808321
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12713,18 +12713,62 @@ MonoBehaviour:
   m_GameObject: {fileID: 1331808320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 32
+  itemId: 48
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 1331808336}
-  startLabel:
+  description: Enables Play
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 317942984}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
     stringRef: {fileID: 0}
     stringVal: 
-  startIndex: 0
-  callMode: 0
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1331808336
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13555,9 +13599,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1331808336}
+  - {fileID: 1331808365}
   selectedCommands:
-  - {fileID: 1331808332}
+  - {fileID: 1331808335}
   variables: []
   description: 
   stepPause: 0
@@ -16574,6 +16618,11 @@ PrefabInstance:
       propertyPath: wallLayer.m_Bits
       value: 2560
       objectReference: {fileID: 0}
+    - target: {fileID: 2067837230289348620, guid: faf0f8021e691304db3def3926d46a7d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2067837230289348622, guid: faf0f8021e691304db3def3926d46a7d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16643,36 +16692,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 849123048}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseDor
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
-        type: 3}
-      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6791797375113477841, guid: abcf04059b0aef94d854d12250913882,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16727,6 +16746,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 849123048}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseDor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2096759177707533427, guid: abcf04059b0aef94d854d12250913882,
+        type: 3}
+      propertyPath: tileStepEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7928105526803623065, guid: abcf04059b0aef94d854d12250913882,
         type: 3}
