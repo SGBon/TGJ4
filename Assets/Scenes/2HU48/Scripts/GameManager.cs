@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 	private static readonly int GRID_SIZE = GRID_WIDTH * GRID_WIDTH;
 	[Range(0,1)]
 	public float TWO_CHANCE;
+	public int winCondition; // Tile to reach to win
 
     // Start is called before the first frame update
     void Start()
