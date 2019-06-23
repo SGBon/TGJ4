@@ -720,8 +720,6 @@ GameObject:
   - component: {fileID: 80488618}
   - component: {fileID: 80488617}
   - component: {fileID: 80488616}
-  - component: {fileID: 80488615}
-  - component: {fileID: 80488614}
   - component: {fileID: 80488640}
   - component: {fileID: 80488639}
   - component: {fileID: 80488638}
@@ -1090,9 +1088,9 @@ GameObject:
   - component: {fileID: 80488986}
   - component: {fileID: 80488985}
   - component: {fileID: 80488984}
-  - component: {fileID: 80488983}
   - component: {fileID: 80488675}
   - component: {fileID: 80488996}
+  - component: {fileID: 80488614}
   m_Layer: 0
   m_Name: Labyrinth Floor 2 Flowchart
   m_TagString: Untagged
@@ -1109,47 +1107,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 80488613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: f1ff0f540016ff64ab1556db6fe1e10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 10
+  itemId: 935
   indentLevel: 0
-  text: Right
-  description: 
-  targetBlock: {fileID: 0}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &80488615
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80488613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 9
-  indentLevel: 0
-  text: Left
-  description: 
-  targetBlock: {fileID: 0}
-  hideIfVisited: 1
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  display: 2
+  stage: {fileID: 0}
+  replacedStage: {fileID: 0}
+  useDefaultSettings: 1
+  fadeDuration: 0
+  waitUntilFinished: 0
 --- !u!114 &80488616
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1395,7 +1363,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 513
-    y: 71
+    y: 61
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1418,9 +1386,7 @@ MonoBehaviour:
   - {fileID: 80488618}
   - {fileID: 80488984}
   - {fileID: 80488617}
-  - {fileID: 80488983}
   - {fileID: 80488996}
-  - {fileID: 80488615}
   - {fileID: 80488614}
 --- !u!114 &80488625
 MonoBehaviour:
@@ -1435,11 +1401,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 58, y: -62}
+  scrollPos: {x: 61.622406, y: 87.63394}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 431
-  zoom: 1
+  zoom: 0.85000014
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1447,9 +1413,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 80488624}
-  selectedCommands:
-  - {fileID: 80488996}
+  - {fileID: 80488724}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1884,7 +1849,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 502
     y: 357
-    width: 161
+    width: 175.88232
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2906,7 +2871,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 493
     y: 298
-    width: 175
+    width: 191.17645
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4081,7 +4046,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 501
     y: 127
-    width: 147
+    width: 157.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4146,9 +4111,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 502
+    x: 503
     y: 239
-    width: 154
+    width: 165.2941
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10471,7 +10436,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 461
     y: 183
-    width: 255
+    width: 278.23526
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11106,28 +11071,6 @@ MonoBehaviour:
   isStartPoint: 0
   keyMode: 2
   customKey: In the distance, I heard a door open.
-  keySeparator: _
-  descriptionMode: 0
-  customDescription: 
-  fireEvent: 1
-  resumeOnLoad: 1
---- !u!114 &80488983
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80488613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 933
-  indentLevel: 0
-  isStartPoint: 0
-  keyMode: 2
-  customKey: ChoiceMenu
   keySeparator: _
   descriptionMode: 0
   customDescription: 
@@ -23324,6 +23267,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 428164552}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1455683611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455683615}
+  - component: {fileID: 1455683614}
+  - component: {fileID: 1455683613}
+  - component: {fileID: 1455683612}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1455683612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455683611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1997211142, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ForceModuleActive: 0
+--- !u!114 &1455683613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455683611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1455683614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455683611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
+--- !u!4 &1455683615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455683611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1459165189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24593,7 +24616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1644452154
 RectTransform:
   m_ObjectHideFlags: 0

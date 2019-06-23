@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/DungeonCrawlerFramework/Scenes/1 floor.unity
-    guid: c00a5df4c1eac1f4d8c29e141c4cf62d
+    path: Assets/DungeonCrawlerFramework/Scenes/1 floor Cooler.unity
+    guid: 21f9984d5feb83c4cb644687131dda40
   - enabled: 1
     path: Assets/Pong/PlayLevel.unity
     guid: 5720caab9eb63dd49bc545dc6833728a
