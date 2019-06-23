@@ -27,7 +27,7 @@ public class TileManager : MonoBehaviour
 	 * Retrieve a new tile from the pool. If the pool contains no tiles and we have not yet instantiated POOL_SIZE tiles
 	 * then instantiate a new tile. If we already have POOL_SIZE tiles in use then return null.
 	 */
-	public GameObject retrieveTile()
+	public GameObject RetrieveTile()
 	{
 		if (tilePool.Count > 0)
 		{
@@ -53,7 +53,7 @@ public class TileManager : MonoBehaviour
 	/**
 	 *  add a tile to the pool
 	 */
-	public void internTile(GameObject tile)
+	public void InternTile(GameObject tile)
 	{
 		tile.SetActive(false);
 		tilePool.Push(tile);

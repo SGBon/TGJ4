@@ -57,7 +57,7 @@ public class TileController : MonoBehaviour
 		}
 	}
 
-	public void setValue(int value)
+	public void SetValue(int value)
 	{
 		if(meshRenderer == null)
 		{
@@ -72,27 +72,25 @@ public class TileController : MonoBehaviour
 			meshRenderer.material.color = lowColour;	
 		}else if(value <= 128)
 		{
-			Debug.Log("mid");
 			meshRenderer.material.color = midColour;
 		}
 		else
 		{
-			Debug.Log("High");
 			meshRenderer.material.color = highColour;
 		}
 	}
 
-	public int getValue()
+	public int GetValue()
 	{
 		return value;
 	}
 
-	public void shrink()
+	public void Shrink()
 	{
 		transform.localScale = new Vector3(minSize, minSize, 0.1f);
 	}
 
-	public void grow()
+	public void Grow()
 	{
 		growing = true;
 	}
@@ -100,7 +98,7 @@ public class TileController : MonoBehaviour
 	/**
 	 * pulse the size
 	 */
-	public void pulse()
+	public void Pulse()
 	{
 		growing = true;
 		Vector3 scale = transform.localScale;
@@ -112,7 +110,7 @@ public class TileController : MonoBehaviour
 	/**
 	 * set the position of this tile, will interpolate to the position on every update unless the noInterp flag is set
 	 */
-	public void setPosition(Vector3 position)
+	public void SetPosition(Vector3 position)
 	{
 		interpPosition = position;
 		if (noInterp)
@@ -129,7 +127,7 @@ public class TileController : MonoBehaviour
 	/**
 	 * Call this to finish interpolating and just translate the transform to the required position
 	 */
-	public void finishInteroplation()
+	public void FinishInteroplation()
 	{
 		if (interpolating)
 		{
@@ -141,7 +139,7 @@ public class TileController : MonoBehaviour
 	/**
 	 * Call this to notify to not interpolate the next position change
 	 */
-	public void disableNextInterp()
+	public void DisableNextInterp()
 	{
 		noInterp = true;
 	}
