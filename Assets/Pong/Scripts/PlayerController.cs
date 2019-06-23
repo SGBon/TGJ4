@@ -10,12 +10,17 @@ public class PlayerController : MonoBehaviour {
 	public float topBound = 4.5F;
 	public float bottomBound = -4.5F;
 
+    //Add sounds
+    public AudioClip smackSound;
+    private AudioSource source;
+
     Animator anim;
 
 	// Use this for initialization
 	void Start () {
 		//Time.timeScale = 0;
         anim = GetComponent<Animator>();
+        source = GetComponent<AudioSource>();
 	}
 
 	void Update(){
@@ -42,5 +47,7 @@ public class PlayerController : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         anim.SetTrigger("Smack");
+        source.PlayOneShot(smackSound, 1F);
+
     }
 }

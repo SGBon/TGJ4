@@ -9,6 +9,11 @@ TagManager:
   - Enemy
   - Shield
   - Orb
+  - FxTemporaire
+  - Ball
+  - ShowOnFinish
+  - ShowOnPause
+  - Bound
   layers:
   - Default
   - TransparentFX

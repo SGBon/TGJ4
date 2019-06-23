@@ -6,6 +6,7 @@ public class UIManager : MonoBehaviour {
 	GameObject[] pauseObjects, finishObjects;
 	public BoundController rightBound;
 	public BoundController leftBound;
+    public EnemyController enemy;
 	public bool isFinished;
 	public bool playerWon, enemyWon;
 
@@ -19,18 +20,25 @@ public class UIManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if(rightBound.enemyScore >= 3 && !isFinished){
-			isFinished = true;
-			enemyWon = true;
-			playerWon = false;
-		} else if (leftBound.playerScore >= 3  && !isFinished){
-			isFinished = true;
-			enemyWon = false;
-			playerWon = true;
-		}
+		//if(rightBound.enemyScore >= 3 && !isFinished){
+		//	isFinished = true;
+		//	enemyWon = true;
+		//	playerWon = false;
+		//} else if (leftBound.playerScore >= 3  && !isFinished){
+		//	isFinished = true;
+		//	enemyWon = false;
+		//	playerWon = true;
+		//}
+
+        //end the game if the orb hit the wall 40 times
+        if(enemy.hitCount >= 5 && !isFinished)
+        {
+            isFinished = true;
+        }
 
 		if(isFinished){
-			showFinished();
+            Time.timeScale = 0;
+            showFinished();
 		}
 
 		

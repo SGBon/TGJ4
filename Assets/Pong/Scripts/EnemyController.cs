@@ -13,8 +13,15 @@ public class EnemyController : MonoBehaviour {
 	//the ball's rigidbody 2D
 	Rigidbody2D ballRig2D;
 
-	//bounds of enemy
-	public float topBound = 4.5F;
+    //add the time orb hit on wall
+    public int hitCount;
+
+    //Add sounds
+    public AudioClip bounceSound;
+    private AudioSource source;
+
+    //bounds of enemy
+    public float topBound = 4.5F;
 	public float bottomBound = -4.5F;
 
     Animator anim;
@@ -25,7 +32,9 @@ public class EnemyController : MonoBehaviour {
 		InvokeRepeating("Move", .02F, .02F);
 
         anim = GetComponent<Animator>();
-	}
+        source = GetComponent<AudioSource>();
+        hitCount = 0;
+    }
 
 	// Movement for the paddle
 	void Move () {
@@ -72,5 +81,7 @@ public class EnemyController : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         anim.SetTrigger("Shake");
+        source.PlayOneShot(bounceSound, 1F);
+        hitCount++;
     }
 }

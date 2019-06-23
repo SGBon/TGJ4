@@ -6,18 +6,18 @@ public class PointCounter : MonoBehaviour {
 
 	public GameObject rightBound;
 	public GameObject leftBound;
+    public GameObject enemy;
 	Text text;
 
 	// Use this for initialization
 	void Start () {
 		text = GetComponent<Text>();
-		text.text = rightBound.GetComponent<BoundController>().enemyScore + "\t" + 
-			leftBound.GetComponent<BoundController>().playerScore;
-	}
+        text.text = enemy.GetComponent<EnemyController>().hitCount.ToString();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		text.text = rightBound.GetComponent<BoundController>().enemyScore + "\t" + 
-			leftBound.GetComponent<BoundController>().playerScore;
-	}
+        text.text = enemy.GetComponent<EnemyController>().hitCount.ToString();
+    }
 }

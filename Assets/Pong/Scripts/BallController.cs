@@ -12,8 +12,12 @@ public class BallController : MonoBehaviour {
 	//the initial direction of the ball
 	private Vector2 spawnDir;
 
-	//ball's components
-	Rigidbody2D rig2D;
+    //Add sounds
+    public AudioClip bounceSound;
+    private AudioSource source;
+
+    //ball's components
+    Rigidbody2D rig2D;
 	// Use this for initialization
 	void Start () {
 		//setting balls Rigidbody 2D
@@ -35,8 +39,10 @@ public class BallController : MonoBehaviour {
 
 		//moving ball in initial direction and adding speed
 		rig2D.velocity = (spawnDir*speed);
-		
-	}
+
+        source = GetComponent<AudioSource>();
+
+    }
 	
 	// Update is called once per frame
 	//void Update () {
@@ -66,6 +72,11 @@ public class BallController : MonoBehaviour {
 			//set angle and speed
 			Vector2 d = new Vector2(-1, y).normalized;
 			rig2D.velocity = d * speed * 1.5F;
+        }
+
+        if (col.gameObject.tag == "Bound")
+        {
+            source.PlayOneShot(bounceSound, 1F);
         }
 
         speed += speedIncrease;
