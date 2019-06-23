@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour {
     public enum Sound {
         Move,
         DoorOpen,
+        DoorClose,
         Count
     }
 
@@ -132,6 +133,17 @@ public class AudioManager : MonoBehaviour {
 
     [SerializeField]
     AudioListener listener;
+
+    public AudioListener Listener {
+        get
+        {
+            return listener;
+        }
+        set
+        {
+            listener = value;
+        }
+    }
 
     [SerializeField]
     GameObject sourcePrefab;

@@ -44,14 +44,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numSources: 16
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: aba3da0ceca313f4690aea4870341449, type: 3}
+  - {fileID: 8300000, guid: d8511181b4eb96d49a3e54c0d35678f8, type: 3}
+  - {fileID: 8300000, guid: 4e268befa06ad674eab789fbbf74529a, type: 3}
   tracks: []
   trackIntros: []
   loopingSources: []
   sourcePositions: []
   exclusiveList: 
-  soundVolume: 0
-  musicVolume: 0
+  soundVolume: 1
+  musicVolume: 1
   spatialSound: 1
   currentTrack: 0
   listener: {fileID: 0}

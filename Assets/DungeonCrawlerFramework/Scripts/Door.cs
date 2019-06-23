@@ -23,13 +23,20 @@ public class Door : MonoBehaviour
 
     public void OpenDoor()
     {
+        if (!anim.GetBool("open_door"))
+        {
+            am.PlaySoundOnce(AudioManager.Sound.DoorOpen, transform, AudioManager.Priority.High, AudioManager.Pitches.VeryLow);
+        }
         anim.SetBool("open_door", true);
-        am.PlaySoundOnce(AudioManager.Sound.DoorOpen, transform, AudioManager.Priority.High, AudioManager.Pitches.VeryLow);
     }
 
 
     public void CloseDoor()
     {
+        if (anim.GetBool("open_door"))
+        {
+            am.PlaySoundOnce(AudioManager.Sound.DoorClose, transform, AudioManager.Priority.High, AudioManager.Pitches.VeryLow);
+        }
         anim.SetBool("open_door", false);
     }
 }
