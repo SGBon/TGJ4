@@ -23175,6 +23175,8 @@ GameObject:
   - component: {fileID: 2112641137}
   - component: {fileID: 2112641136}
   - component: {fileID: 2112641135}
+  - component: {fileID: 2112641138}
+  - component: {fileID: 2112641139}
   m_Layer: 0
   m_Name: Story Flowchart
   m_TagString: Untagged
@@ -23294,7 +23296,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 0}
   offset: 0
@@ -23324,7 +23326,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 0}
   offset: 0
@@ -23354,7 +23356,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 15a20b885554ebd42ad08f50bd2ee81c, type: 3}
   offset: 0
@@ -23448,11 +23450,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 291
   indentLevel: 0
-  storyText: Well, it doesn't matter.{wi} We should investigate further.{wi} There
-    should be more stuff ahead.
+  storyText: Well, it doesn't matter.{wi} Let's investigate further.{wi} There should
+    be more stuff ahead!
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1860286477}
+  portrait: {fileID: 21300000, guid: 15a20b885554ebd42ad08f50bd2ee81c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -23508,8 +23510,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I see your expectations are as high as always.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1072035287}
+  portrait: {fileID: 21300000, guid: 48e9ed6006a43cf40ae9635acb707d0d, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -23535,8 +23537,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Not another boring room like this, that's for sure.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1860286477}
+  portrait: {fileID: 21300000, guid: db16d94338da81841982cf6f58dfcb5b, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -23636,9 +23638,9 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 13771e3ca151a0c4ab80b1506456510c, type: 3}
+  portrait: {fileID: 21300000, guid: 28b8bc9dc192bf344873acafa11d35e6, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -23666,9 +23668,9 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
+  portrait: {fileID: 21300000, guid: b073631ee6cf8744cadbee8f7b810638, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -23718,7 +23720,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 2
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 0}
   offset: 0
@@ -23748,7 +23750,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 2
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 0}
   offset: 0
@@ -23776,9 +23778,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 279
   indentLevel: 0
-  storyText: What were you expecting on the other side of the door?
+  storyText: "What, were you expecting something in particular?\r\n"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -23805,7 +23807,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "H-huh\u2026? This is anticlimactic\u2026"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -23848,7 +23850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 276
   indentLevel: 0
-  storyText: The next room seemed exactly the same as previous.
+  storyText: The room we entered seemed exactly the same as the previous one.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -23943,7 +23945,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: W-what are you doing?!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -24127,7 +24129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 264
   indentLevel: 0
-  storyText: I grabbed the knob of the door and ran into the next room.
+  storyText: I ran down the corridor, passing the light and symbols onto the clearing
+    ahead.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -24156,7 +24159,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 15a20b885554ebd42ad08f50bd2ee81c, type: 3}
   offset: 0
@@ -24186,7 +24189,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 9aca30728f1df4347ae8ff4e0f7375eb, type: 3}
   offset: 0
@@ -24214,10 +24217,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 261
   indentLevel: 0
-  storyText: "Ehhhhh?! Don\u2019t just drag me along with you!"
+  storyText: "Ehhhhh?! Don\u2019t just drag me along, I\u2019m going to fall!"
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1072035287}
+  portrait: {fileID: 21300000, guid: 9aca30728f1df4347ae8ff4e0f7375eb, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24243,8 +24246,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "Let\u2019s get going, then!"
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1860286477}
+  portrait: {fileID: 21300000, guid: 24566f66fa328154497e1b5bdb599931, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -24268,10 +24271,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 259
   indentLevel: 0
-  storyText: "It\u2019s probably best to not think about it.{wi} The only language
-    spoken in Gensokyo is Japanese, after all."
+  storyText: "It\u2019s probably not that important."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -24296,10 +24298,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 258
   indentLevel: 0
-  storyText: "\u201C{b}START{/b}\u201D? I have no recollection of ever seeing these
-    strange symbols before."
+  storyText: "\u201C{b}S-T-A-R-T{/b}\u201D? I have no recollection of ever seeing
+    these strange symbols before."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -24326,7 +24328,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: db16d94338da81841982cf6f58dfcb5b, type: 3}
   offset: 0
@@ -24356,7 +24358,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 2
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 0}
   offset: 0
@@ -24386,7 +24388,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 2
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 0}
   offset: 0
@@ -24444,7 +24446,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
   offset: 0
@@ -25007,8 +25009,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Hopefully it will give us a clue to what this place is.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1072035287}
+  portrait: {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25034,7 +25036,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "Hey, look at that! It\u2019s about time we got some action!"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25061,7 +25063,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 15a20b885554ebd42ad08f50bd2ee81c, type: 3}
   offset: 0
@@ -25091,7 +25093,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
   offset: 0
@@ -25121,7 +25123,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 2
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 0}
   offset: 0
@@ -25151,7 +25153,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 2
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 0}
   offset: 0
@@ -25179,8 +25181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 222
   indentLevel: 0
-  storyText: "This isn\x19t something you would see in just any old ruin.{wi} I prepared
-    myself and kept approaching the light.\r"
+  storyText: "This isn\x19t something you would see in just any old ruin.{wi} I readied
+    my mini-hakkero and continued approaching."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -25207,8 +25209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 221
   indentLevel: 0
-  storyText: We continue to progress through the ruins.{wi} After a short while, I
-    notice a faint red light in the distance.
+  storyText: "We continued through the ruins. {wi} After a bit of walking, I noticed
+    a faint red light in the distance. \r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -25237,7 +25239,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "Anyways, let\u2019s keep pressing on further."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25264,7 +25266,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 15a20b885554ebd42ad08f50bd2ee81c, type: 3}
   offset: 0
@@ -25294,7 +25296,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "I-I don\u2019t want to hear that from a hoarder!"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25321,7 +25323,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 9aca30728f1df4347ae8ff4e0f7375eb, type: 3}
   offset: 0
@@ -25351,8 +25353,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Magical items!
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1860286477}
+  portrait: {fileID: 21300000, guid: 15a20b885554ebd42ad08f50bd2ee81c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25378,7 +25380,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Gold!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25405,7 +25407,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: eb12e2fe5aa42bb488a27a925876e6a5, type: 3}
   offset: 0
@@ -25435,7 +25437,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: db16d94338da81841982cf6f58dfcb5b, type: 3}
   offset: 0
@@ -25465,7 +25467,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Your greed has no end, huh.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25492,8 +25494,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '...'
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1072035287}
+  portrait: {fileID: 21300000, guid: eb12e2fe5aa42bb488a27a925876e6a5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25519,7 +25521,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "This place definitely has\u2060\u2014"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25546,7 +25548,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 24566f66fa328154497e1b5bdb599931, type: 3}
   offset: 0
@@ -25603,7 +25605,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: db16d94338da81841982cf6f58dfcb5b, type: 3}
   offset: 0
@@ -25633,7 +25635,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
   offset: 0
@@ -25663,8 +25665,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "Are you thinking what I\u2019m thinking?"
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1072035287}
+  portrait: {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25688,7 +25690,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 204
   indentLevel: 0
-  storyText: Out of the blue, Reimu says something while I am still lost in my thoughts.
+  storyText: As I thought about the possibilities, Reimu slowly turned her head towards
+    me.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -25777,8 +25780,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Yet also oddly welcoming...
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1860286477}
+  portrait: {fileID: 21300000, guid: 28b8bc9dc192bf344873acafa11d35e6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -25804,7 +25807,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: It feels rather ominous and foreboding.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25831,7 +25834,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: This aura, you can feel it right?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25858,7 +25861,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: You feel the same, too?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25885,7 +25888,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "I can\u2019t shake this weird feeling I have, though."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25912,7 +25915,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1860286477}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: db16d94338da81841982cf6f58dfcb5b, type: 3}
   offset: 0
@@ -25942,7 +25945,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 5d7f01dac4f1c1d4498d79ecab9a6b49, type: 3}
   offset: 0
@@ -26398,7 +26401,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Tch.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1072035287}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -27751,6 +27754,7 @@ MonoBehaviour:
   eventHandler: {fileID: 2112640841}
   commandList:
   - {fileID: 2112641008}
+  - {fileID: 2112641138}
   - {fileID: 2112640838}
   - {fileID: 2112641011}
   - {fileID: 2112641010}
@@ -27921,6 +27925,7 @@ MonoBehaviour:
   - {fileID: 2112640845}
   - {fileID: 2112640851}
   - {fileID: 2112640846}
+  - {fileID: 2112641139}
   - {fileID: 2112640850}
   - {fileID: 2112640847}
   - {fileID: 2112640844}
@@ -31042,7 +31047,7 @@ MonoBehaviour:
   scrollPos: {x: 236.40074, y: -132.58241}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 468
+  blockViewHeight: 470
   zoom: 0.7900002
   scrollViewRect:
     serializedVersion: 2
@@ -31053,7 +31058,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 2112641012}
   selectedCommands:
-  - {fileID: 2112640945}
+  - {fileID: 2112640848}
   variables: []
   description: 
   stepPause: 0
@@ -31196,7 +31201,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &2112641132
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -31226,7 +31231,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &2112641133
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -31256,7 +31261,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &2112641134
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -31284,7 +31289,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2112641135
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -31314,7 +31319,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &2112641136
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -31344,7 +31349,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &2112641137
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -31365,6 +31370,101 @@ MonoBehaviour:
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
   facing: 1
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &2112641138
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112640836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 313
+  indentLevel: 0
+  description: Hide Background
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1460468371}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &2112641139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112640836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 314
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1072035287}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 48e9ed6006a43cf40ae9635acb707d0d, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
   useDefaultSettings: 1
   fadeDuration: 0.5
   moveDuration: 1
