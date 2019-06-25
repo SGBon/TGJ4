@@ -23168,7 +23168,6 @@ GameObject:
   - component: {fileID: 2112641130}
   - component: {fileID: 2112640837}
   - component: {fileID: 2112641131}
-  - component: {fileID: 2112640841}
   - component: {fileID: 2112641132}
   - component: {fileID: 2112641134}
   - component: {fileID: 2112641133}
@@ -23177,6 +23176,7 @@ GameObject:
   - component: {fileID: 2112641135}
   - component: {fileID: 2112641138}
   - component: {fileID: 2112641139}
+  - component: {fileID: 2112640841}
   m_Layer: 0
   m_Name: Story Flowchart
   m_TagString: Untagged
@@ -23268,7 +23268,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &2112640841
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23278,7 +23278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 2112641012}
+  parentBlock: {fileID: 2112641126}
   waitForFrames: 1
 --- !u!114 &2112640842
 MonoBehaviour:
@@ -27751,7 +27751,7 @@ MonoBehaviour:
   itemId: 126
   blockName: Enter Labyrinth
   description: 
-  eventHandler: {fileID: 2112640841}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2112641008}
   - {fileID: 2112641138}
@@ -30995,7 +30995,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Beginning Scene
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 2112640841}
   commandList:
   - {fileID: 2112641108}
   - {fileID: 2112640837}
@@ -31055,10 +31055,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 2112641012}
-  selectedCommands:
-  - {fileID: 2112640848}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
