@@ -45,6 +45,11 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
+    public void SwitchScene(int scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
+
     public void UnloadScene(int scene)
     {
         SceneManager.UnloadSceneAsync(scene);
